@@ -1,502 +1,718 @@
 const nudgesBiasesHeuristics = [
     {
         name: "Confirmation bias",
-        definition: "Mensen zoeken informatie die hun bestaande overtuigingen bevestigt."
+        definition: "People search for information that confirms their existing beliefs."
     },
     {
         name: "Anchoring bias",
-        definition: "Mensen vertrouwen te veel op het eerste stukje informatie dat ze ontvangen."
+        definition: "People rely too much on the first piece of information they receive."
     },
     {
         name: "Availability heuristic",
-        definition: "Mensen beoordelen de waarschijnlijkheid van een gebeurtenis op basis van hoe gemakkelijk voorbeelden te bedenken zijn."
+        definition: "People judge the likelihood of an event based on how easily examples come to mind."
     },
     {
         name: "Overconfidence bias",
-        definition: "Mensen overschatten hun eigen kennis of vaardigheden."
+        definition: "People overestimate their own knowledge or skills."
     },
     {
         name: "Hindsight bias",
-        definition: "Achteraf denken dat een gebeurtenis voorspelbaar was."
+        definition: "Thinking after the fact that an event was predictable."
     },
     {
         name: "Loss aversion",
-        definition: "Mensen vermijden liever verlies dan dat ze winst nastreven."
+        definition: "People prefer to avoid loss rather than seek gain."
     },
     {
         name: "Framing effect",
-        definition: "Beslissingen worden beïnvloed door hoe informatie wordt gepresenteerd."
+        definition: "Decisions are influenced by how information is presented."
     },
     {
         name: "Dunning-Kruger effect",
-        definition: "Mensen met weinig kennis overschatten hun bekwaamheid."
+        definition: "People with little knowledge overestimate their competence."
     },
     {
         name: "Self-serving bias",
-        definition: "Succes toeschrijven aan jezelf, en mislukkingen aan externe factoren."
+        definition: "Attributing success to yourself and failures to external factors."
     },
     {
         name: "Sunk cost fallacy",
-        definition: "Mensen blijven investeren in iets waarin ze al veel hebben geïnvesteerd, zelfs als het niet meer rationeel is."
+        definition: "People continue to invest in something they’ve already invested a lot in, even if it is no longer rational."
     },
     {
         name: "Bandwagon effect",
-        definition: "Mensen volgen de menigte of een populaire mening."
+        definition: "People follow the crowd or a popular opinion."
     },
     {
         name: "Negativity bias",
-        definition: "Negatieve ervaringen wegen zwaarder dan positieve."
+        definition: "Negative experiences weigh more heavily than positive ones."
     },
     {
         name: "Halo effect",
-        definition: "Een goede indruk op één gebied beïnvloedt hoe we iemand op andere gebieden beoordelen."
+        definition: "A good impression in one area influences how we judge someone in other areas."
     },
     {
         name: "Recency bias",
-        definition: "Recente gebeurtenissen hebben meer invloed dan oude gebeurtenissen."
+        definition: "Recent events have more influence than older ones."
     },
     {
         name: "Optimism bias",
-        definition: "Mensen geloven dat ze minder kans hebben op negatieve gebeurtenissen."
+        definition: "People believe they are less likely to experience negative events."
     },
     {
         name: "Status quo bias",
-        definition: "Mensen geven de voorkeur aan de huidige situatie boven verandering."
+        definition: "People prefer the current situation over change."
     },
     {
         name: "Clustering illusion",
-        definition: "Mensen zien patronen in willekeurige gegevens."
+        definition: "People see patterns in random data."
     },
     {
         name: "Attribution bias",
-        definition: "Het gedrag van anderen toeschrijven aan hun persoonlijkheid, niet aan externe omstandigheden."
+        definition: "Attributing others' behavior to their personality, not external circumstances."
     },
     {
         name: "Just-world bias",
-        definition: "Geloven dat mensen krijgen wat ze verdienen."
+        definition: "Believing that people get what they deserve."
     },
     {
         name: "Base rate fallacy",
-        definition: "Basisinformatie negeren ten gunste van specifieke details."
+        definition: "Ignoring basic information in favor of specific details."
     },
     {
         name: "Rosy retrospection bias",
-        definition: "Mensen herinneren zich het verleden positiever dan het daadwerkelijk was."
+        definition: "People remember the past more positively than it actually was."
     },
     {
         name: "Egocentric bias",
-        definition: "Mensen overschatten hun eigen bijdrage aan een groepsprestatie."
+        definition: "People overestimate their own contribution to a group achievement."
     },
     {
         name: "Pessimism bias",
-        definition: "Mensen geloven dat negatieve uitkomsten waarschijnlijker zijn."
+        definition: "People believe that negative outcomes are more likely."
     },
     {
         name: "Illusory superiority",
-        definition: "Mensen denken dat ze beter zijn dan gemiddeld."
+        definition: "People believe they are better than average."
     },
     {
         name: "Survivorship bias",
-        definition: "Alleen succesvolle voorbeelden worden bekeken, waardoor het beeld vertekend raakt."
+        definition: "Only successful examples are considered, distorting the image."
     },
     {
         name: "Action bias",
-        definition: "Mensen voelen zich beter door iets te doen, zelfs als het nutteloos is."
+        definition: "People feel better by doing something, even if it’s useless."
     },
     {
         name: "Outcome bias",
-        definition: "Beslissingen worden beoordeeld op basis van het resultaat, niet het proces."
+        definition: "Decisions are judged based on the outcome, not the process."
     },
     {
         name: "Empathy gap",
-        definition: "Het is moeilijk om je in te leven in gevoelens die je zelf niet ervaart."
+        definition: "It is difficult to empathize with feelings that you do not experience."
     },
     {
         name: "Pro-innovation bias",
-        definition: "Nieuwe ideeën worden overschat omdat ze innovatief lijken."
+        definition: "New ideas are overestimated because they seem innovative."
     },
     {
         name: "Cheerleader effect",
-        definition: "Mensen zien groepen als aantrekkelijker dan individuele leden."
+        definition: "People see groups as more attractive than individual members."
     },
     {
         name: "Forer effect",
-        definition: "Vage en algemene uitspraken voelen persoonlijk accuraat aan."
+        definition: "Vague and general statements feel personally accurate."
     },
     {
         name: "Planning fallacy",
-        definition: "Mensen onderschatten hoeveel tijd of middelen iets kost."
+        definition: "People underestimate how much time or resources something will take."
     },
     {
         name: "Gambler's fallacy",
-        definition: "Geloven dat kansen veranderen naarmate een gebeurtenis vaker gebeurt."
+        definition: "Believing that chances change as an event happens more frequently."
     },
     {
         name: "Empowerment bias",
-        definition: "Mensen overschatten hun controle over gebeurtenissen."
+        definition: "People overestimate their control over events."
     },
     {
         name: "Hyperbolic discounting",
-        definition: "Mensen geven meer waarde aan beloningen op korte termijn dan op lange termijn."
+        definition: "People value short-term rewards more than long-term ones."
     },
     {
         name: "Belief bias",
-        definition: "Mensen accepteren logische fouten als ze overeenkomen met hun overtuigingen."
+        definition: "People accept logical errors if they align with their beliefs."
     },
     {
         name: "False consensus effect",
-        definition: "Denken dat je mening breder gedeeld wordt dan echt het geval is."
+        definition: "Believing your opinion is more widely shared than it really is."
     },
     {
         name: "Authority bias",
-        definition: "Meer waarde hechten aan meningen van autoriteitsfiguren."
+        definition: "Placing more value on the opinions of authority figures."
     },
     {
         name: "Zero-risk bias",
-        definition: "De voorkeur geven aan keuzes die risico's volledig elimineren, ook al zijn ze inefficiënt."
+        definition: "Preferring choices that eliminate risks completely, even if they are inefficient."
     },
     {
         name: "Placebo effect",
-        definition: "Het geloof dat iets werkt kan het effect versterken, zelfs zonder werkzame stoffen."
+        definition: "Belief that something works can enhance the effect, even without active ingredients."
     },
     {
         name: "Chunking nudge",
-        definition: "Informatie in kleine stukken aanbieden om het makkelijker te verwerken."
+        definition: "Presenting information in small pieces to make it easier to process."
     },
     {
         name: "Time scarcity nudge",
-        definition: "Mensen beïnvloeden door een gevoel van urgentie te creëren."
+        definition: "Influencing people by creating a sense of urgency."
     },
     {
         name: "Color coding",
-        definition: "Kleuren gebruiken om gedrag te sturen (zoals rood voor waarschuwingen)."
+        definition: "Using colors to guide behavior (e.g., red for warnings)."
     },
     {
         name: "Visual cues",
-        definition: "Visuele elementen die gewenst gedrag stimuleren."
+        definition: "Visual elements that encourage desired behavior."
     },
     {
         name: "Checklists",
-        definition: "Mensen helpen door hen te herinneren aan stappen die ze moeten volgen."
+        definition: "Helping people by reminding them of steps they need to follow."
     },
     {
         name: "Reframing nudge",
-        definition: "Informatie presenteren op een manier die gunstiger lijkt."
+        definition: "Presenting information in a way that appears more favorable."
     },
     {
         name: "Choice restriction",
-        definition: "Opties beperken om het maken van een keuze makkelijker te maken."
+        definition: "Limiting options to make decision-making easier."
     },
     {
         name: "Peer benchmarking",
-        definition: "Vergelijkingen tonen met het gedrag van anderen in dezelfde situatie."
+        definition: "Showing comparisons with the behavior of others in the same situation."
     },
     {
         name: "Dynamic pricing",
-        definition: "Prijzen aanpassen aan gedrag of timing om gedrag te beïnvloeden."
+        definition: "Adjusting prices based on behavior or timing to influence actions."
     },
     {
         name: "Structured procrastination",
-        definition: "Mensen sturen om nuttige taken te doen terwijl ze andere uitstellen."
+        definition: "Guiding people to do useful tasks while they procrastinate other tasks."
     },
     {
         name: "Behavioral defaults",
-        definition: "Standaardinstellingen bepalen gedrag zonder bewuste actie."
+        definition: "Default settings determine behavior without conscious action."
     },
     {
         name: "Partition nudge",
-        definition: "Tussenschotten plaatsen om gedrag te sturen (zoals kleinere borden)."
+        definition: "Placing partitions to guide behavior (e.g., smaller plates)."
     },
     {
         name: "Proximity nudge",
-        definition: "Beloningen of doelen fysiek dichterbij brengen om actie te bevorderen."
+        definition: "Bringing rewards or goals physically closer to promote action."
     },
     {
         name: "Temptation bundling",
-        definition: "Ongewenst gedrag combineren met iets leuks (bijvoorbeeld muziek luisteren tijdens sporten)."
+        definition: "Combining undesirable behavior with something enjoyable (e.g., listening to music while exercising)."
     },
     {
         name: "Door-in-the-face nudge",
-        definition: "Eerst een grote vraag stellen en daarna een kleinere om die aanvaardbaar te laten lijken."
+        definition: "First asking a large request and then a smaller one to make the latter seem acceptable."
     },
     {
         name: "Foot-in-the-door nudge",
-        definition: "Iemand met een kleine vraag overhalen om later iets groters te doen."
+        definition: "Convincing someone with a small request to later do something bigger."
     },
     {
         name: "Message framing",
-        definition: "Positieve of negatieve taal gebruiken om keuzes te sturen."
+        definition: "Using positive or negative language to steer choices."
     },
     {
         name: "Scarcity reminders",
-        definition: "Herinneren aan beperkte beschikbaarheid om actie uit te lokken."
+        definition: "Reminding people of limited availability to prompt action."
     },
     {
         name: "Attention triggers",
-        definition: "Opvallende meldingen om gedrag te stimuleren."
+        definition: "Noticing alerts to stimulate behavior."
     },
     {
         name: "Behavioral anchoring",
-        definition: "Een uitgangspunt instellen om keuzes te sturen."
+        definition: "Setting a starting point to guide decisions."
     },
     {
         name: "Illusion of control",
-        definition: "Mensen geloven dat ze meer controle hebben over een situatie dan eigenlijk het geval is."
+        definition: "People believe they have more control over a situation than they actually do."
     },
     {
         name: "Contrast effect",
-        definition: "Mensen beoordelen een optie in vergelijking met een andere, niet op zichzelf."
+        definition: "People judge an option in comparison with another, not on its own."
     },
     {
         name: "Hot-hand fallacy",
-        definition: "Het geloof dat een persoon met succes in een reeks succesvol zal blijven."
+        definition: "The belief that a person will continue to succeed after a series of successes."
     },
     {
         name: "Endowment effect",
-        definition: "Mensen hechten meer waarde aan iets wat ze al bezitten."
+        definition: "People place more value on things they already own."
     },
     {
         name: "Mere exposure effect",
-        definition: "Mensen hebben de neiging iets leuker te vinden hoe vaker ze het zien."
+        definition: "People tend to like something more the more often they see it."
     },
     {
         name: "Social proof",
-        definition: "Mensen volgen het gedrag van anderen om te bepalen wat juist is."
+        definition: "People follow the behavior of others to determine what is right."
     },
     {
         name: "Primacy effect",
-        definition: "Eerste indrukken hebben een onevenredig grote invloed."
+        definition: "First impressions have an disproportionately large influence."
     },
     {
         name: "Serial position effect",
-        definition: "Mensen herinneren zich het eerste en laatste deel van een reeks beter."
+        definition: "People remember the first and last items in a series better."
     },
     {
         name: "IKEA effect",
-        definition: "Mensen hechten meer waarde aan dingen die ze zelf hebben gemaakt."
+        definition: "People value things they have made themselves more."
     },
     {
         name: "Loss framing",
-        definition: "Opties presenteren als verlies om actie te stimuleren."
+        definition: "Presenting options as a loss to encourage action."
     },
     {
         name: "Precommitment",
-        definition: "Van tevoren beloftes maken om gewenst gedrag te bevorderen."
+        definition: "Making promises in advance to encourage desired behavior."
     },
     {
         name: "Priming",
-        definition: "Mensen onbewust beïnvloeden (associaties) door bepaalde woorden of beelden te tonen."
+        definition: "Influencing people unconsciously (associations) by showing certain words or images."
     },
     {
         name: "Feedback loops",
-        definition: "Directe terugkoppeling geeft mensen inzicht in hun gedrag."
+        definition: "Immediate feedback gives people insight into their behavior."
     },
     {
         name: "Simplification",
-        definition: "Complexe keuzes makkelijker maken verhoogt participatie."
+        definition: "Making complex choices easier increases participation."
     },
     {
         name: "Commitment",
-        definition: "Een mechanisme om jezelf aan toekomstige acties te binden."
+        definition: "A mechanism to bind yourself to future actions."
     },
     {
         name: "Pre-suasion",
-        definition: "Mensen in de juiste mindset brengen vóór de boodschap wordt overgebracht."
+        definition: "Bringing people into the right mindset before the message is delivered."
     },
     {
         name: "Goal-setting nudge",
-        definition: "Doelen stellen verhoogt motivatie en actie."
+        definition: "Setting goals increases motivation and action."
     },
     {
         name: "Gamification",
-        definition: "Spelmechanismen gebruiken om gedrag te stimuleren."
+        definition: "Using game mechanisms to stimulate behavior."
     },
     {
         name: "Personalization",
-        definition: "Berichten of opties afstemmen op individuen verhoogt de impact."
+        definition: "Tailoring messages or options to individuals increases impact."
     },
     {
         name: "Salience",
-        definition: "Opvallende informatie trekken meer aandacht en actie."
+        definition: "Salient information attracts more attention and action."
     },
     {
         name: "Descriptive norms",
-        definition: "Laten zien wat de meeste mensen doen om gedrag te beïnvloeden."
+        definition: "Showing what most people do to influence behavior."
     },
     {
         name: "Reminder nudge",
-        definition: "Herinneringen verhogen de kans dat mensen iets doen."
+        definition: "Reminders increase the likelihood that people will take action."
     },
     {
         name: "Immediate rewards",
-        definition: "Kleine beloningen direct na gewenst gedrag stimuleren herhaling."
+        definition: "Small rewards immediately following desired behavior encourage repetition."
     },
     {
         name: "Implementation intentions",
-        definition: "Specifieke plannen maken (Als X, dan Y) verhoogt de kans dat mensen handelen."
+        definition: "Making specific plans (If X, then Y) increases the likelihood of action."
     },
     {
         name: "Social comparisons",
-        definition: "Mensen motiveren door hen met hun peers te vergelijken."
+        definition: "Motivating people by comparing them to their peers."
     },
     {
         name: "Micro-incentives",
-        definition: "Kleine beloningen of voordelen aanbieden voor gewenst gedrag."
+        definition: "Offering small rewards or benefits for desired behavior."
     },
     {
         name: "Representativeness heuristic",
-        definition: "Beslissen op basis van hoe goed iets in een stereotype past."
+        definition: "Deciding based on how well something fits a stereotype."
     },
     {
         name: "Affect heuristic",
-        definition: "Oordelen baseren op emoties in plaats van feiten."
+        definition: "Making judgments based on emotions instead of facts."
     },
     {
         name: "Familiarity heuristic",
-        definition: "Bekende opties worden als beter of veiliger beschouwd."
+        definition: "Familiar options are considered better or safer."
     },
     {
         name: "Recognition heuristic",
-        definition: "De meest herkenbare optie wordt gekozen."
+        definition: "Choosing the most recognizable option."
     },
     {
         name: "Scarcity heuristic",
-        definition: "Schaarse items lijken waardevoller."
+        definition: "Scarce items appear more valuable."
     },
     {
         name: "Effort heuristic",
-        definition: "Mensen zien iets als waardevoller als er meer moeite in zit."
+        definition: "People see something as more valuable if more effort is put into it."
     },
     {
         name: "Gaze heuristic",
-        definition: "Bewegingen baseren op de blikrichting (bijvoorbeeld bij sport)."
+        definition: "Making movements based on where the eyes are directed (e.g., in sports)."
     },
     {
         name: "Default heuristic",
-        definition: "De standaardoptie wordt vaak gekozen."
+        definition: "The default option is often chosen."
     },
     {
         name: "Satisficing",
-        definition: "De eerste optie die 'goed genoeg' lijkt, wordt gekozen."
+        definition: "Choosing the first option that seems 'good enough.'"
     },
     {
         name: "Take-the-best heuristic",
-        definition: "Alleen de belangrijkste factor overwegen bij een beslissing."
+        definition: "Considering only the most important factor in a decision."
     },
     {
         name: "Tit-for-tat heuristic",
-        definition: "Samenwerken zolang de ander dat ook doet."
+        definition: "Cooperating as long as the other person does too."
     },
     {
         name: "Availability cascade",
-        definition: "Een idee wordt geloofd omdat het herhaald wordt."
+        definition: "An idea is believed because it is repeated."
     },
     {
         name: "Substitution heuristic",
-        definition: "Een moeilijke vraag vervangen door een gemakkelijkere vraag."
+        definition: "Replacing a difficult question with an easier one."
     },
     {
         name: "Temporal discounting",
-        definition: "Mensen geven de voorkeur aan onmiddellijke beloningen boven toekomstige beloningen."
+        definition: "People prefer immediate rewards over future rewards."
     },
     {
         name: "Escalation of commitment",
-        definition: "Meer middelen investeren in een falend project."
+        definition: "Investing more resources into a failing project."
     },
     {
         name: "Elimination by aspects",
-        definition: "Opties elimineren op basis van specifieke kenmerken."
+        definition: "Eliminating options based on specific features."
     },
     {
         name: "Hot-hand fallacy",
-        definition: "Geloven dat succes in het verleden leidt tot succes in de toekomst."
+        definition: "Believing that past success leads to future success."
     },
     {
         name: "Risk heuristic",
-        definition: "Mensen nemen meer risico's als de kans op verlies lager lijkt."
+        definition: "People take more risks when the chance of loss seems lower."
     },
     {
         name: "Social utility heuristic",
-        definition: "Beslissingen baseren op wat sociaal acceptabel lijkt."
+        definition: "Making decisions based on what seems socially acceptable."
     },
     {
         name: "Frequency heuristic",
-        definition: "Beoordelingen maken op basis van hoe vaak iets voorkomt."
+        definition: "Making judgments based on how often something occurs."
     },
     {
         name: "Fluency heuristic",
-        definition: "Dingen die gemakkelijker te begrijpen zijn, lijken betrouwbaarder."
+        definition: "Things that are easier to understand seem more reliable."
     },
     {
         name: "Similarity heuristic",
-        definition: "Beslissingen nemen op basis van gelijkenissen met eerdere situaties."
+        definition: "Making decisions based on similarities to past situations."
     },
     {
         name: "Efficient market heuristic",
-        definition: "Geloven dat markten altijd rationeel en efficiënt zijn."
+        definition: "Believing markets are always rational and efficient."
     },
     {
         name: "Moral credential effect",
-        definition: "Goed gedrag in het verleden gebruiken om nu iets minder ethisch te doen."
+        definition: "Using past good behavior as an excuse to act less ethically now."
     },
     {
         name: "Surprise heuristic",
-        definition: "Meer aandacht schenken aan onverwachte gebeurtenissen."
+        definition: "Paying more attention to unexpected events."
     },
     {
         name: "Affect labeling",
-        definition: "Het benoemen van emoties om ze te reguleren."
+        definition: "Naming emotions to regulate them."
     },
     {
         name: "Opportunity cost neglect",
-        definition: "Het negeren van alternatieve kosten bij keuzes."
+        definition: "Ignoring alternative costs when making choices."
     },
     {
         name: "Default heuristic",
-        definition: "Automatisch kiezen voor de optie die standaard is."
+        definition: "Automatically choosing the default option."
     },
     {
         name: "Rule of thumb",
-        definition: "Simpele vuistregels gebruiken voor complexe problemen."
+        definition: "Using simple rules for complex problems."
     },
     {
         name: "Peak-end rule",
-        definition: "Beslissingen baseren op piek- en eindmomenten van ervaringen."
+        definition: "Making decisions based on peak moments and the end of experiences."
     },
     {
         name: "Ambiguity heuristic",
-        definition: "Keuzes vermijden die onzekerheid bevatten."
+        definition: "Avoiding choices that involve uncertainty."
     },
     {
         name: "Recognition-primed decision",
-        definition: "Snelle beslissingen nemen op basis van herkenning."
+        definition: "Making quick decisions based on recognition."
     },
     {
         name: "Hot-cold empathy gap",
-        definition: "Niet begrijpen hoe emoties keuzes beïnvloeden tijdens stress."
+        definition: "Not understanding how emotions influence decisions during stress."
     },
     {
         name: "Probability neglect",
-        definition: "Kleine kansen over- of onderschatten."
+        definition: "Overestimating or underestimating small chances."
     },
     {
         name: "Rapid intuition",
-        definition: "Snel oordelen zonder bewuste redenatie."
+        definition: "Making quick judgments without conscious reasoning."
     },
     {
         name: "Serial position effect",
-        definition: "De eerste en laatste items in een reeks onthouden mensen beter."
+        definition: "People remember the first and last items in a series better."
     },
     {
         name: "Storytelling heuristic",
-        definition: "Geloven dat dingen waar zijn omdat ze een logisch verhaal vormen."
+        definition: "Believing things are true because they form a logical story."
     },
     {
         name: "Fast-and-frugal heuristic",
-        definition: "Snelle beslissingen nemen met minimale informatie."
+        definition: "Making quick decisions with minimal information."
     },
     {
         name: "Representative matching",
-        definition: "Voorbeelden kiezen die het meest representatief lijken, zelfs als ze niet accuraat zijn."
-    }
+        definition: "Choosing examples that seem most representative, even if they are not accurate."
+    },    
+    { 
+        name: "Illusory truth effect", 
+        definition: "The tendency to believe false information to be true after repeated exposure." 
+    },
+    { 
+        name: "Context effect", 
+        definition: "The influence of environmental factors on perception and decision-making." 
+    },
+    { 
+        name: "Von Restorff effect", 
+        definition: "The tendency to remember distinct or unique items better than common ones." 
+    },
+    { 
+        name: "Picture superiority effect", 
+        definition: "Images are more likely to be remembered than words." 
+    },
+    { 
+        name: "Self-relevance effect", 
+        definition: "Information related to oneself is better remembered than unrelated information." 
+    },
+    { 
+        name: "Negativity bias", 
+        definition: "Negative events or emotions have a stronger impact than positive ones." 
+    },
+    { 
+        name: "Conservation", 
+        definition: "The cognitive ability to understand that quantity remains the same despite changes in shape or arrangement." 
+    },
+    { 
+        name: "Distinction bias", 
+        definition: "The tendency to overemphasize differences when comparing two options side by side." 
+    },
+    { 
+        name: "Focusing effect", 
+        definition: "The tendency to place too much emphasis on a single aspect of an event or decision." 
+    },
+    { 
+        name: "Money illusion", 
+        definition: "The tendency to think of money in nominal terms rather than real value adjusted for inflation." 
+    },
+    { 
+        name: "Weber-Fechner law", 
+        definition: "The principle that the perceived change in a stimulus is proportional to the initial intensity of the stimulus." 
+    },
+    { 
+        name: "Congruence bias", 
+        definition: "The tendency to test hypotheses in a way that confirms pre-existing beliefs." 
+    },
+    { 
+        name: "Post-purchase rationalization", 
+        definition: "The tendency to justify a purchase after it has been made to reduce cognitive dissonance." 
+    },
+    { 
+        name: "Choice-supportive bias", 
+        definition: "The tendency to remember one's past choices as better than they actually were." 
+    },
+    { 
+        name: "Selective perception", 
+        definition: "The tendency to perceive information in a way that aligns with pre-existing beliefs or expectations." 
+    },
+    { 
+        name: "Observer-expectancy effect", 
+        definition: "The tendency for researchers or observers to subconsciously influence participants' behavior in line with expectations." 
+    },
+    { 
+        name: "Experimenter's bias", 
+        definition: "The tendency for researchers to unintentionally influence the outcome of an experiment to align with their expectations." 
+    },
+    { 
+        name: "Observer effect", 
+        definition: "The phenomenon where individuals alter their behavior when they know they are being observed." 
+    },
+    { 
+        name: "Expectation bias", 
+        definition: "The tendency to perceive or interpret data in a way that aligns with one's expectations or hypotheses." 
+    },
+    { 
+        name: "Ostrich effect", 
+        definition: "The tendency to ignore negative information by avoiding it, such as not checking financial losses." 
+    },
+    { 
+        name: "Subjective validation", 
+        definition: "The tendency to perceive information as true if it aligns with personal beliefs or experiences." 
+    },
+    { 
+        name: "Continued influence effect", 
+        definition: "The tendency for misinformation to persist in memory and influence decisions even after being debunked." 
+    },
+    { 
+        name: "Semmelweis reflex", 
+        definition: "The tendency to reject new evidence or ideas that contradict established beliefs." 
+    },
+    { 
+        name: "Bias blind spot", 
+        definition: "The inability to recognize one's own cognitive biases while easily identifying them in others." 
+    },
+    { 
+        name: "Naïve cynicism", 
+        definition: "The tendency to believe that others are more selfish or manipulative than they actually are." 
+    },
+    { 
+        name: "Naïve realism", 
+        definition: "The belief that one's own perception of reality is objective, while others who disagree are biased or misinformed." 
+    },
+    { 
+        name: "Confabulation", 
+        definition: "The act of fabricating, distorting, or misinterpreting memories without the intent to deceive." 
+    },
+    { 
+        name: "Insensitivity to sample size", 
+        definition: "The tendency to ignore the reliability of statistical results based on the size of the sample." 
+    },
+    { 
+        name: "Neglect of probability", 
+        definition: "The tendency to disregard probability when making decisions, often favoring emotions over logic." 
+    },
+    { 
+        name: "Anecdotal fallacy", 
+        definition: "The tendency to rely on personal experiences or isolated examples instead of statistical evidence." 
+    },
+    { 
+        name: "Illusion of validity", 
+        definition: "The overestimation of the accuracy of one's own judgments or predictions despite contradictory evidence." 
+    },
+    { 
+        name: "Masked man fallacy", 
+        definition: "The logical error of assuming that if one person knows something in one context, they must recognize it in another context." 
+    },
+    { 
+        name: "Recency illusion", 
+        definition: "The belief that something newly noticed is a recent phenomenon when it may have existed for a long time." 
+    },
+    { 
+        name: "Gambler's fallacy", 
+        definition: "The mistaken belief that past random events affect the probability of future random events." 
+    },
+    { 
+        name: "Illusory correlation", 
+        definition: "The tendency to perceive a relationship between two unrelated variables due to prior expectations." 
+    },
+    { 
+        name: "Pareidolia", 
+        definition: "The tendency to see patterns or familiar objects, such as faces, in random stimuli." 
+    },
+    { 
+        name: "Anthropomorphism", 
+        definition: "The attribution of human characteristics or emotions to non-human entities, such as animals or objects." 
+    },
+    { 
+        name: "Group attribution error", 
+        definition: "The tendency to assume that individuals within a group share the same beliefs or behaviors." 
+    },
+    { 
+        name: "Ultimate attribution error", 
+        definition: "The tendency to explain negative behavior of outgroup members as inherent while attributing negative behavior of ingroup members to situational factors." 
+    },
+    { 
+        name: "Stereotyping", 
+        definition: "The tendency to generalize characteristics, behaviors, or attributes to a group of people." 
+    },
+    { 
+        name: "Essentialism", 
+        definition: "The belief that certain categories, such as gender or ethnicity, have an underlying, unchangeable essence." 
+    },
+    { 
+        name: "Functional fixedness", 
+        definition: "The tendency to see objects only in their traditional use, limiting problem-solving ability." 
+    },
+    { 
+        name: "Moral credential effect", 
+        definition: "The tendency to engage in unethical behavior after proving one's moral integrity." 
+    },
+    { 
+        name: "Just-world hypothesis", 
+        definition: "The belief that people get what they deserve and deserve what they get." 
+    },
+    { 
+        name: "Argument from fallacy", 
+        definition: "The assumption that a conclusion is false because the argument supporting it contains a logical fallacy." 
+    },
+    { 
+        name: "Automation bias", 
+        definition: "The tendency to over-rely on automated systems, even when they make errors." 
+    },
+    { 
+        name: "Placebo effect", 
+        definition: "The phenomenon where people experience real improvements from a treatment with no active ingredients." 
+    },
+    { 
+        name: "Out-group homogeneity bias", 
+        definition: "The perception that members of an out-group are more similar to each other than they actually are." 
+    },
+    { 
+        name: "Cross-race effect", 
+        definition: "The tendency to have difficulty recognizing or differentiating faces of people from other racial groups." 
+    },
+    { 
+        name: "In-group bias", 
+        definition: "The tendency to favor members of one's own group over those in out-groups." 
+    },
+    { 
+        name: "Positivity effect", 
+        definition: "The tendency to focus more on positive information as one ages, while ignoring negative information." 
+    },
+    { 
+        name: "Not invented here", 
+        definition: "The tendency to reject ideas or products developed outside one's own group or company." 
+    },
+    { 
+        name: "Reactive devaluation", 
+        definition: "The tendency to dismiss or undervalue a proposal simply because it comes from an opposing party." 
+    },
+    { 
+        name: "Well-traveled road effect", 
+        definition: "The tendency to perceive familiar routes as shorter than unfamiliar ones." 
+    },
 ]; 
