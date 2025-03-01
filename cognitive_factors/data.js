@@ -161,119 +161,118 @@ const nudgesBiasesHeuristics = [
     },
     {
         name: "Gambler's fallacy",
-        definition: "Believing that chances change as an event happens more frequently."
+        definition: "Believing that chances change as an event happens more frequently.",
+        example: "A gambling site uses the idea of “luck turning around” to encourage more betting, implying that losses must be followed by a win."
     },
     {
         name: "Empowerment bias",
-        definition: "People overestimate their control over events."
+        definition: "People overestimate their control over events.",
+        example: "A self-improvement brand creates a campaign that positions its products as the key to unlocking personal growth and success, making users feel like they’re in control of their destiny."
     },
     {
         name: "Hyperbolic discounting",
-        definition: "People value short-term rewards more than long-term ones."
-    },
-    {
-        name: "Belief bias",
-        definition: "People accept logical errors if they align with their beliefs."
+        definition: "People value short-term rewards more than long-term ones. Instant gratification.",
+        example: "Sign up today and get instant access—why wait when you can start enjoying now?"
     },
     {
         name: "False consensus effect",
-        definition: "Believing your opinion is more widely shared than it really is."
+        definition: "Believing your opinion is more widely shared than it really is.",
+        example: "You’re not the only one who loves these styles—everyone’s wearing them this season."
     },
     {
         name: "Authority bias",
-        definition: "Placing more value on the opinions of authority figures."
+        definition: "Placing more value on the opinions of authority figures.",
+        example: "The use of awards, labels, years of experience or testimonials of experts."
     },
     {
         name: "Zero-risk bias",
-        definition: "Preferring choices that eliminate risks completely, even if they are inefficient."
+        definition: "Preferring choices that eliminate risks completely, even if they are inefficient.",
+        example: "Ensure total safety with our system."
     },
     {
         name: "Placebo effect",
-        definition: "Belief that something works can enhance the effect, even without active ingredients."
+        definition: "Belief that something works can enhance the effect, even without active ingredients.",
+        example: "A beauty brand promotes a product by creating the illusion of immediate, noticeable effects, focusing on emotional satisfaction rather than real change."
     },
     {
         name: "Chunking nudge",
-        definition: "Presenting information in small pieces to make it easier to process."
+        definition: "Presenting information in small pieces to make it easier to process.",
+        example: "Buy 2, get 1 free."
     },
     {
         name: "Time scarcity nudge",
-        definition: "Influencing people by creating a sense of urgency."
+        definition: "Influencing people by creating a sense of urgency.",
+        example: "Hurry, only 3 hours left to grab 50% off—act fast."
     },
     {
         name: "Color coding",
-        definition: "Using colors to guide behavior (e.g., red for warnings)."
+        definition: "Using colors to guide behavior (e.g., red for warnings).",
+        example: "A retailer uses color-coded price tags or promotional banners in ads to draw attention to the best deals, making it easy for consumers to make decisions quickly."
     },
     {
         name: "Visual cues",
-        definition: "Visual elements that encourage desired behavior."
+        definition: "Visual elements that encourage desired behavior.",
+        example: "A brand uses bold visual cues like arrows or highlights to direct customers through a website or shopping journey, making it easier for them to follow the intended path."
     },
     {
         name: "Checklists",
-        definition: "Helping people by reminding them of steps they need to follow."
-    },
-    {
-        name: "Reframing nudge",
-        definition: "Presenting information in a way that appears more favorable."
+        definition: "Helping people by reminding them of steps they need to follow.",
+        example: "Use lists with icons for 'how it works', 'advantages', 'forms'..."
     },
     {
         name: "Choice restriction",
-        definition: "Limiting options to make decision-making easier."
+        definition: "Limiting options to make decision-making easier.",
+        example: "A brand offers a limited set of product options to simplify the decision-making process, highlighting that fewer choices lead to quicker, more confident decisions."
     },
     {
         name: "Peer benchmarking",
-        definition: "Showing comparisons with the behavior of others in the same situation."
+        definition: "Showing comparisons with the behavior of others in the same situation.",
+        example: "A service or product compares itself to competitors, emphasizing how many people are already using or benefiting from it, encouraging customers to align with the “winning” choice."
     },
     {
         name: "Dynamic pricing",
-        definition: "Adjusting prices based on behavior or timing to influence actions."
-    },
-    {
-        name: "Structured procrastination",
-        definition: "Guiding people to do useful tasks while they procrastinate other tasks."
+        definition: "Adjusting prices based on behavior or timing to influence actions.",
+        example: "A retailer uses dynamic pricing where the price decreases the longer you wait, encouraging quick action with a timer showing the lower price before it increases."
     },
     {
         name: "Behavioral defaults",
-        definition: "Default settings determine behavior without conscious action."
+        definition: "Default settings determine behavior without conscious action.",
+        example: "A brand pre-selects the best or most popular settings for a user to remove decision fatigue, framing the default choice as the most efficient or optimal one."
     },
     {
         name: "Partition nudge",
-        definition: "Placing partitions to guide behavior (e.g., smaller plates)."
+        definition: "Placing partitions to guide behavior (e.g., smaller plates).",
+        example: "Choose your meals in just 3 easy steps—pick your plan, select your meals, and enjoy."
     },
     {
         name: "Proximity nudge",
-        definition: "Bringing rewards or goals physically closer to promote action."
+        definition: "Bringing rewards or goals physically closer to promote action.",
+        example: "A brand promotes its physical store or service location by highlighting its closeness, encouraging customers to act based on convenience and proximity."
     },
     {
         name: "Temptation bundling",
-        definition: "Combining undesirable behavior with something enjoyable (e.g., listening to music while exercising)."
+        definition: "Combining undesirable behavior with something enjoyable.",
+        example: "A service or product pairs a less enjoyable task (e.g., exercise) with a tempting treat (e.g., music, entertainment), encouraging users to engage in the task by offering a pleasurable reward at the same time."
     },
     {
         name: "Door-in-the-face nudge",
-        definition: "First asking a large request and then a smaller one to make the latter seem acceptable."
+        definition: "First asking a large request and then a smaller one to make the latter seem acceptable.",
+        example: "Want the premium version for $199? If not, the standard one is available for just $99."
     },
     {
         name: "Foot-in-the-door nudge",
-        definition: "Convincing someone with a small request to later do something bigger."
+        definition: "Convincing someone with a small request to later do something bigger.",
+        example: "A subscription service offers a free trial or low-commitment entry point, making it easier for users to say yes, then nudging them toward a full subscription once they’re hooked."
     },
     {
         name: "Message framing",
-        definition: "Using positive or negative language to steer choices."
-    },
-    {
-        name: "Scarcity reminders",
-        definition: "Reminding people of limited availability to prompt action."
-    },
-    {
-        name: "Attention triggers",
-        definition: "Noticing alerts to stimulate behavior."
-    },
-    {
-        name: "Behavioral anchoring",
-        definition: "Setting a starting point to guide decisions."
+        definition: "Using positive or negative language to steer choices.",
+        example: "A brand uses negative framing, emphasizing what customers could lose (e.g., -Don’t let this deal slip away- or -Avoid the consequences of not upgrading-."
     },
     {
         name: "Illusion of control",
-        definition: "People believe they have more control over a situation than they actually do."
+        definition: "People believe they have more control over a situation than they actually do.",
+        example: "Track every move and customize your workouts—your success is in your hands."
     },
     {
         name: "Contrast effect",
