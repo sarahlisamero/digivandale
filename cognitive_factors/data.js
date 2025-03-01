@@ -1,131 +1,163 @@
 const nudgesBiasesHeuristics = [
     {
         name: "Confirmation bias",
-        definition: "People search for information that confirms their existing beliefs."
+        definition: "People search for information that confirms their existing beliefs.",
+        example: "A person only reads news that supports their beliefs and ignores opposing views."
     },
     {
         name: "Anchoring bias",
-        definition: "People rely too much on the first piece of information they receive."
+        definition: "People rely too much on the first piece of information they receive.",
+        example: "A streaming service first displays the most expensive plan, making the mid-tier option seem more reasonable."
     },
     {
         name: "Availability heuristic",
-        definition: "People judge the likelihood of an event based on how easily examples come to mind."
+        definition: "People judge the likelihood of an event based on how easily examples come to mind.",
+        example: "After seeing multiple ads for a new fitness app, a user believes it’s the most popular and effective option."
     },
     {
         name: "Overconfidence bias",
-        definition: "People overestimate their own knowledge or skills."
+        definition: "People overestimate their own knowledge or skills.",
+        example: "A brand relies only on its past successful ad campaigns, assuming the new one will perform well without testing."
     },
     {
         name: "Hindsight bias",
-        definition: "Thinking after the fact that an event was predictable."
+        definition: "Thinking after the fact that an event was predictable.",
+        example: "After an ad variation performs better, advertisers believe the winning design was the clear choice all along."
     },
     {
         name: "Loss aversion",
-        definition: "People prefer to avoid loss rather than seek gain."
+        definition: "People prefer to avoid loss rather than seek gain.",
+        example: "An online store shows a countdown timer on a sale, making users feel they’ll lose out if they don’t buy immediately."
     },
     {
         name: "Framing effect",
-        definition: "Decisions are influenced by how information is presented."
+        definition: "Decisions are influenced by how information is presented.",
+        example: "An online ad says “Save $50!” instead of “Pay $150,” making the discount feel more appealing."
     },
     {
         name: "Dunning-Kruger effect",
-        definition: "People with little knowledge overestimate their competence."
+        definition: "People with little knowledge overestimate their competence.",
+        example: "A small business owner with no experience runs their own social media ads, believing they’re just as skilled as professional marketers, despite poor results."
     },
     {
         name: "Self-serving bias",
-        definition: "Attributing success to yourself and failures to external factors."
+        definition: "Attributing success to yourself and failures to external factors.",
+        example: "A digital marketer attributes a successful ad campaign to their skills, but blames poor performance on external factors like bad timing or the algorithm."
     },
     {
         name: "Sunk cost fallacy",
-        definition: "People continue to invest in something they’ve already invested a lot in, even if it is no longer rational."
+        definition: "People continue to invest in something they’ve already invested a lot in, even if it is no longer rational.",
+        example: "A company continues pouring money into a poorly performing ad campaign, believing they must keep investing to recover the money already spent."
     },
     {
         name: "Bandwagon effect",
-        definition: "People follow the crowd or a popular opinion."
+        definition: "People follow the crowd or a popular opinion.",
+        example: "An influencer promotes a trending product, and followers buy it because -everyone else is-"
     },
     {
         name: "Negativity bias",
-        definition: "Negative experiences weigh more heavily than positive ones."
+        definition: "Negative experiences weigh more heavily than positive ones.",
+        example: "An e-commerce site highlights a single negative review on an otherwise 5-star rated product, making potential buyers focus on the negative."
     },
     {
         name: "Halo effect",
-        definition: "A good impression in one area influences how we judge someone in other areas."
+        definition: "A good impression in one area influences how we judge someone in other areas.",
+        example: "A sleek, visually appealing website makes users assume the product or service is of high quality, even if the content is minimal."
     },
     {
         name: "Recency bias",
-        definition: "Recent events have more influence than older ones."
+        definition: "Recent events have more influence than older ones.",
+        example: "After recently visiting an online store, a user starts seeing ads for the same products everywhere, influencing them to buy."
     },
     {
         name: "Optimism bias",
-        definition: "People believe they are less likely to experience negative events."
+        definition: "People believe they are less likely to experience negative events.",
+        example: "A company runs an ad campaign for a new product, assuming it will be an instant success, despite having no market data to support that."
     },
     {
         name: "Status quo bias",
-        definition: "People prefer the current situation over change."
+        definition: "People prefer the current situation over change.",
+        example: "Why change what works? The classic taste you’ve always loved!"
     },
     {
         name: "Clustering illusion",
-        definition: "People see patterns in random data."
+        definition: "People see patterns in random data.",
+        example: "A brand sees a spike in engagement from a specific hashtag and assumes it’s a trend, investing more in that hashtag even though it's just a random occurrence."
     },
     {
         name: "Attribution bias",
-        definition: "Attributing others' behavior to their personality, not external circumstances."
+        definition: "Attributing others' behavior to their personality, not external circumstances.",
+        example: "A brand blames a poor review on a customer's bad mood, rather than considering flaws in the product or service itself."
     },
     {
         name: "Just-world bias",
-        definition: "Believing that people get what they deserve."
+        definition: "Believing that people get what they deserve.",
+        example: "A brand posts an influencer ad and blames negative comments on people -not understanding the brand,- instead of considering issues with the messaging or the influencer's fit."
     },
     {
         name: "Base rate fallacy",
-        definition: "Ignoring basic information in favor of specific details."
+        definition: "Ignoring basic information in favor of specific details.",
+        example: "A shopper sees a rare negative review on a mostly positive product and overestimates the likelihood of the product being faulty, ignoring the overall high rating."
     },
     {
         name: "Rosy retrospection bias",
-        definition: "People remember the past more positively than it actually was."
+        definition: "People remember the past more positively than it actually was.",
+        example: "A brand creates an ad using vintage retro cameras, evoking nostalgic feelings that make viewers remember the past more fondly than it actually was."
     },
     {
         name: "Egocentric bias",
-        definition: "People overestimate their own contribution to a group achievement."
+        definition: "People overestimate their own contribution to a group achievement.",
+        example: "A brand runs an ad campaign with a personalized message, and customers believe the ad was created just for them, even though it’s part of a broader targeting strategy."
     },
     {
         name: "Pessimism bias",
-        definition: "People believe that negative outcomes are more likely."
+        definition: "People believe that negative outcomes are more likely.",
+        example: "An advertiser sees a slight dip in early ad performance and assumes the entire campaign will fail, even though it’s too soon to judge."
     },
     {
         name: "Illusory superiority",
-        definition: "People believe they are better than average."
+        definition: "People believe they are better than average.",
+        example: "With our product, you’ll stand out from the crowd and make smarter decisions than everyone else."
     },
     {
         name: "Survivorship bias",
-        definition: "Only successful examples are considered, distorting the image."
+        definition: "Only successful examples are considered, distorting the image.",
+        example: "A startup accelerator promotes stories of wildly successful alumni but doesn’t mention those who failed using the same program."
     },
     {
         name: "Action bias",
-        definition: "People feel better by doing something, even if it’s useless."
+        definition: "People feel better by doing something, even if it’s useless.",
+        example: "A self-improvement brand promotes the idea that taking any action (buying their product, signing up, subscribing) is always better than hesitation."
     },
     {
         name: "Outcome bias",
-        definition: "Decisions are judged based on the outcome, not the process."
+        definition: "Decisions are judged based on the outcome, not the process.",
+        example: "A marketing campaign focuses only on positive outcomes (before-and-after photos, testimonials) without mentioning other variables like effort, genetics, or market conditions."
     },
     {
         name: "Empathy gap",
-        definition: "It is difficult to empathize with feelings that you do not experience."
+        definition: "It is difficult to empathize with feelings that you do not experience.",
+        example: "Future you will thank you, start saving now."
     },
     {
         name: "Pro-innovation bias",
-        definition: "New ideas are overestimated because they seem innovative."
+        definition: "New ideas are overestimated because they seem innovative.",
+        example: "A marketing campaign presents the latest innovation as universally better, without addressing potential downsides like costs."
     },
     {
         name: "Cheerleader effect",
-        definition: "People see groups as more attractive than individual members."
+        definition: "People see groups as more attractive than individual members.",
+        example: "A dating app features groups of attractive, happy people in promotions, making users assume that everyone on the platform is as appealing as the crowd in the ad."
     },
     {
         name: "Forer effect",
-        definition: "Vague and general statements feel personally accurate."
+        definition: "Vague and general statements feel personally accurate.",
+        example: "Your star sign reveals deep truths about you, see why it's accurate."
     },
     {
         name: "Planning fallacy",
-        definition: "People underestimate how much time or resources something will take."
+        definition: "People underestimate how much time or resources something will take.",
+        example: "A brand promotes a product that claims to help users complete tasks much quicker than they plan, emphasizing speed and ease over realistic timelines."
     },
     {
         name: "Gambler's fallacy",
