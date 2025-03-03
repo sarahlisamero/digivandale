@@ -276,260 +276,189 @@ const nudgesBiasesHeuristics = [
     },
     {
         name: "Contrast effect",
-        definition: "People judge an option in comparison with another, not on its own."
+        definition: "People judge an option in comparison with another, not on its own.",
+        example: "A brand shows a basic version of a product alongside a more expensive, premium version, making the higher-priced product seem like a much better deal in comparison."
     },
     {
         name: "Hot-hand fallacy",
-        definition: "The belief that a person will continue to succeed after a series of successes."
+        definition: "The belief that a person will continue to succeed after a series of successes.",
+        example: "You’ve made three winning trades in a row—keep the streak going with your next big move."
     },
     {
         name: "Endowment effect",
-        definition: "People place more value on things they already own."
+        definition: "People place more value on things they already own.",
+        example: "A brand offers a free trial or hands-on experience, knowing that once customers feel ownership over a product, they’ll be more likely to buy it."
     },
     {
         name: "Mere exposure effect",
-        definition: "People tend to like something more the more often they see it."
+        definition: "People tend to like something more the more often they see it.",
+        example: "A company retargets users with frequent, subtle exposure to their product, reinforcing familiarity and increasing the chances of conversion."
     },
     {
         name: "Social proof",
-        definition: "People follow the behavior of others to determine what is right."
+        definition: "People follow the behavior of others to determine what is right.",
+        example: "reviews, testimonials, 'used by XX amount', 'people's favorite..."
     },
     {
         name: "Primacy effect",
-        definition: "First impressions have an disproportionately large influence."
+        definition: "First impressions have an disproportionately large influence.",
+        example: "A brand ensures its most important selling points appear at the very start of an ad, website, or email to make a lasting impact."
     },
     {
         name: "Serial position effect",
-        definition: "People remember the first and last items in a series better."
+        definition: "People remember the first and last items in a series better.",
+        example: "A brand places the most important products or messages at the beginning and end of an ad, landing page, or product list to ensure they stick in customers' minds."
     },
     {
         name: "IKEA effect",
-        definition: "People value things they have made themselves more."
+        definition: "People value things they have made themselves more.",
+        example: "A brand offers customizable products (e.g., sneakers, furniture, or meal kits)."
     },
     {
         name: "Loss framing",
-        definition: "Presenting options as a loss to encourage action."
+        definition: "Presenting options as a loss to encourage action.",
+        example: "Do not miss this chance - Do not let it slip away."
     },
     {
         name: "Precommitment",
-        definition: "Making promises in advance to encourage desired behavior."
+        definition: "Making promises in advance to encourage desired behavior.",
+        example: "Sign up for 3 months today and save 20%."
     },
     {
         name: "Priming",
-        definition: "Influencing people unconsciously (associations) by showing certain words or images."
+        definition: "Influencing people unconsciously (associations) by showing certain words or images.",
+        example: "A company uses imagery, language, or music that primes a specific emotion (e.g., relaxation, excitement, or joy), then promotes a product that aligns with that mood"
     },
     {
         name: "Feedback loops",
-        definition: "Immediate feedback gives people insight into their behavior."
+        definition: "Immediate feedback gives people insight into their behavior.",
+        example: "A brand uses a system where customers receive positive reinforcement as they engage more (e.g., accumulating loyalty points, tracking progress), creating a loop that encourages continued interaction."
     },
     {
         name: "Simplification",
-        definition: "Making complex choices easier increases participation."
+        definition: "Making complex choices easier increases participation.",
+        example: "A company reduces the number of steps needed to purchase or sign up"
     },
     {
         name: "Commitment",
-        definition: "A mechanism to bind yourself to future actions."
-    },
-    {
-        name: "Pre-suasion",
-        definition: "Bringing people into the right mindset before the message is delivered."
-    },
-    {
-        name: "Goal-setting nudge",
-        definition: "Setting goals increases motivation and action."
+        definition: "A mechanism to bind yourself to future actions.",
+        example: "A brand offers special perks or discounts for customers who commit to long-term subscriptions or services."
     },
     {
         name: "Gamification",
-        definition: "Using game mechanisms to stimulate behavior."
+        definition: "Using game mechanisms to stimulate behavior.",
+        example: "A company uses competition and achievement-based rewards (e.g., leaderboards, badges) to motivate users."
     },
     {
         name: "Personalization",
-        definition: "Tailoring messages or options to individuals increases impact."
+        definition: "Tailoring messages or options to individuals increases impact.",
+        example: "A company creates dynamic content or ads that change based on customer preferences."
     },
     {
         name: "Salience",
-        definition: "Salient information attracts more attention and action."
-    },
-    {
-        name: "Descriptive norms",
-        definition: "Showing what most people do to influence behavior."
+        definition: "Salient information attracts more attention and action.",
+        example: "Visual cues, colors, bold typography."
     },
     {
         name: "Reminder nudge",
-        definition: "Reminders increase the likelihood that people will take action."
+        definition: "Reminders increase the likelihood that people will take action.",
+        example: "Notifications, pop-ups, mails..."
     },
     {
         name: "Immediate rewards",
-        definition: "Small rewards immediately following desired behavior encourage repetition."
+        definition: "Small rewards immediately following desired behavior encourage repetition.",
+        example: "Sign up and receive our e-book - Get 10% off your first order."
     },
     {
         name: "Implementation intentions",
-        definition: "Making specific plans (If X, then Y) increases the likelihood of action."
-    },
-    {
-        name: "Social comparisons",
-        definition: "Motivating people by comparing them to their peers."
+        definition: "Making specific plans (If X, then Y) increases the likelihood of action.",
+        example: "If you sign up now, then you get discounts."
     },
     {
         name: "Micro-incentives",
-        definition: "Offering small rewards or benefits for desired behavior."
+        definition: "Offering small rewards or benefits for desired behavior.",
+        example: "McDonalds app, the addition of a small amount of points to save for a bigger reward."
     },
     {
         name: "Representativeness heuristic",
-        definition: "Deciding based on how well something fits a stereotype."
+        definition: "Deciding based on how well something fits a stereotype.",
+        example: "A brand targets a specific audience based on stereotypes (e.g., tech enthusiasts, fashion-forward) and presents their product as the perfect fit for people who identify with that category."
     },
     {
         name: "Affect heuristic",
-        definition: "Making judgments based on emotions instead of facts."
+        definition: "Making judgments based on emotions instead of facts.",
+        example: "A brand uses strong emotional appeals to trigger actions"
     },
     {
         name: "Familiarity heuristic",
-        definition: "Familiar options are considered better or safer."
-    },
-    {
-        name: "Recognition heuristic",
-        definition: "Choosing the most recognizable option."
-    },
-    {
-        name: "Scarcity heuristic",
-        definition: "Scarce items appear more valuable."
+        definition: "Familiar options are considered better or safer.",
+        example: "A company promotes existing products with minor updates or variations, leveraging the familiarity of their brand to attract repeat customers - You've trusted us for years."
     },
     {
         name: "Effort heuristic",
-        definition: "People see something as more valuable if more effort is put into it."
-    },
-    {
-        name: "Gaze heuristic",
-        definition: "Making movements based on where the eyes are directed (e.g., in sports)."
-    },
-    {
-        name: "Default heuristic",
-        definition: "The default option is often chosen."
+        definition: "People see something as more valuable if more effort is put into it.",
+        example: "A brand highlights the effort, care, or craftsmanship that went into creating a product, making customers feel the value of investing in something that took significant effort to make."
     },
     {
         name: "Satisficing",
-        definition: "Choosing the first option that seems 'good enough.'"
+        definition: "Choosing the first option that seems 'good enough.'",
+        example: "A company presents a curated selection of best-selling or most popular products, making it easy for customers to make a choice quickly without excessive deliberation."
     },
     {
         name: "Take-the-best heuristic",
-        definition: "Considering only the most important factor in a decision."
-    },
-    {
-        name: "Tit-for-tat heuristic",
-        definition: "Cooperating as long as the other person does too."
-    },
-    {
-        name: "Availability cascade",
-        definition: "An idea is believed because it is repeated."
-    },
-    {
-        name: "Substitution heuristic",
-        definition: "Replacing a difficult question with an easier one."
-    },
-    {
-        name: "Temporal discounting",
-        definition: "People prefer immediate rewards over future rewards."
-    },
-    {
-        name: "Escalation of commitment",
-        definition: "Investing more resources into a failing project."
-    },
-    {
-        name: "Elimination by aspects",
-        definition: "Eliminating options based on specific features."
-    },
-    {
-        name: "Hot-hand fallacy",
-        definition: "Believing that past success leads to future success."
+        definition: "Considering only the most important factor in a decision.",
+        example: "Why choose anything else? Our phone’s camera is the best—no need to look further."
     },
     {
         name: "Risk heuristic",
-        definition: "People take more risks when the chance of loss seems lower."
-    },
-    {
-        name: "Social utility heuristic",
-        definition: "Making decisions based on what seems socially acceptable."
-    },
-    {
-        name: "Frequency heuristic",
-        definition: "Making judgments based on how often something occurs."
+        definition: "People take more risks when the chance of loss seems lower.",
+        example: "/"
     },
     {
         name: "Fluency heuristic",
-        definition: "Things that are easier to understand seem more reliable."
+        definition: "Things that are easier to understand seem more reliable.",
+        example: "Easy words, readable fonts, summaries with icons..."
     },
     {
         name: "Similarity heuristic",
-        definition: "Making decisions based on similarities to past situations."
-    },
-    {
-        name: "Efficient market heuristic",
-        definition: "Believing markets are always rational and efficient."
+        definition: "Making decisions based on similarities to past situations.",
+        example: "A company highlights the similarities between a new product and past favorites, positioning it as a safe, reliable choice based on previous experiences."
     },
     {
         name: "Moral credential effect",
-        definition: "Using past good behavior as an excuse to act less ethically now."
+        definition: "Using past good behavior as an excuse to act less ethically now.",
+        example: "You’ve been saving all year—go ahead and treat yourself to this upgrade."
     },
     {
         name: "Surprise heuristic",
-        definition: "Paying more attention to unexpected events."
-    },
-    {
-        name: "Affect labeling",
-        definition: "Naming emotions to regulate them."
+        definition: "Paying more attention to unexpected events.",
+        example: "An ad with a monkey in a shop."
     },
     {
         name: "Opportunity cost neglect",
-        definition: "Ignoring alternative costs when making choices."
-    },
-    {
-        name: "Default heuristic",
-        definition: "Automatically choosing the default option."
-    },
-    {
-        name: "Rule of thumb",
-        definition: "Using simple rules for complex problems."
-    },
-    {
-        name: "Peak-end rule",
-        definition: "Making decisions based on peak moments and the end of experiences."
-    },
-    {
-        name: "Ambiguity heuristic",
-        definition: "Avoiding choices that involve uncertainty."
+        definition: "The tendency to overlook or undervalue the benefits of alternative options when making decisions, leading to suboptimal choices by focusing mainly on the immediate costs and benefits of one option.",
+        example: "/"
     },
     {
         name: "Recognition-primed decision",
-        definition: "Making quick decisions based on recognition."
+        definition: "Making quick decisions based on recognition.",
+        example: "/"
     },
     {
         name: "Hot-cold empathy gap",
-        definition: "Not understanding how emotions influence decisions during stress."
+        definition: "Not understanding how emotions influence decisions during stress.",
+        example: "/"
     },
     {
         name: "Probability neglect",
-        definition: "Overestimating or underestimating small chances."
-    },
-    {
-        name: "Rapid intuition",
-        definition: "Making quick judgments without conscious reasoning."
-    },
-    {
-        name: "Serial position effect",
-        definition: "People remember the first and last items in a series better."
+        definition: "Overestimating or underestimating small chances.",
+        example: "A brand encourages customers to take action by focusing on rare but dramatic possibilities (like accidents or losses) while downplaying the actual likelihood of those events happening."
     },
     {
         name: "Storytelling heuristic",
-        definition: "Believing things are true because they form a logical story."
-    },
-    {
-        name: "Fast-and-frugal heuristic",
-        definition: "Making quick decisions with minimal information."
-    },
-    {
-        name: "Representative matching",
-        definition: "Choosing examples that seem most representative, even if they are not accurate."
-    },    
+        definition: "Believing things are true because they form a logical story.",
+        example: "A company crafts a narrative that explains how their product was carefully created and how it fits perfectly into a customer’s life, making the decision to purchase seem like the natural next step."
+    },  
     { 
         name: "Illusory truth effect", 
         definition: "The tendency to believe false information to be true after repeated exposure." 
